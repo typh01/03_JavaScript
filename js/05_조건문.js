@@ -101,42 +101,42 @@ function check3(){
 function ageCheck(){
   const inputAge = document.getElementById("inputAge");
   const age = Number(inputAge.value);
+  let result; 
   
-  if( 0 <= age && age <= 13){
-    alert("어린이 입니다.");
+  if( age >= 0 && age <= 13){
+    result="어린이 입니다.";
   } 
-  else if( 14 <= age && age <= 19){
-    alert("청소년 입니다.");
+  else if( age >= 14 && age <= 19){
+    result="청소년 입니다.";
   } 
-  else if( 20 <= age && age <= 120){
-    alert("어른 입니다.");
+  else if( age >= 20 && age <= 120){
+    result="어른 입니다.";
   } 
   else{
-    alert("잘못 입력하셨습니다.");
+    result="잘못 입력하셨습니다.";
   }
+
+  alert(result);
 }
 
 
 /** (실습문제) 어린이, 청소년, 성인 구분하기 2 */
 // 강사님이 풀이해보는 더 짧은 코드!
-function ageCheck2(){
+function ageCheck2() {
   const inputAge = document.getElementById("inputAge");
   const age = Number(inputAge.value); // 입력 받은 나이
   let result; // 결과 저장용 변수
 
   // 잘못 입력된 경우
-  if(age < 0 || age > 120){
-    result = "잘못 입력 하셨습니다."
-
-  } else if(age <= 13) { // ( 0 <= age && age <= 13)와 같음
-    result = "어린이이"
-
-  } else if(age <= 19) { // ( 14 <= age && age <= 19)와 같음
-    result = "청소년"
-
-  } else{
-    result = "성인"
+  if (age < 0 || age > 120) {
+    result = "잘못 입력하셨습니다.";
+  } else if (age <= 13) { // (0 <= age && age <= 13)와 같음
+    result = "어린이";
+  } else if (age <= 19) { // (14 <= age && age <= 19)와 같음
+    result = "청소년";
+  } else {
+    result = "성인";
   }
 
-  alert=(result);
+  alert(result); // alert 호출 방식 수정
 }
