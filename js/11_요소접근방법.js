@@ -119,6 +119,7 @@ function nameTest(){
 
   // 클래스가 "name-result" 인 요소 중 0번째 요소에 내용으로 출력
   // -> "name-result" 가 1개 밖에 없으므로 0번 인덱스만 선택
+  // [0]을 사용한 이유 - 배열 내부의 요소에 접근하기 위해서
   const div = document.getElementsByClassName("name-result")[0];
 
   // 내부에 내용 작성(HTML 코드를 해석 O)
