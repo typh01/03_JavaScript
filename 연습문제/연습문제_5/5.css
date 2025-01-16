@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+.tel {
+  text-align: center;
+  flex: 1;
+}
+
+.telnumber{
+  width: 300px;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.separate{
+  border: 1px solid lightgray;
+}
+
+.container {
+  width: 300px;
+  height: 400px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.number {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 50%;
+  font-weight: bold;
+  margin: auto;
+  justify-content: center;
+}
+
+.number:hover {
+  background-color: lightgray;
+}
+
+.number:active {
+  font-size: 16px;
+  width: 95px;
+  height: 95px;
+  text-align: center;
+  line-height: 95px;
+  font-size: 17px;
+}
+
+.add {
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+  color: green;
+  margin: 5px auto;
+  border: 1px solid green;
+  background-color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.add:hover {
+  background-color: green;
+  color: white;
+}
+
+.reset {
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+  margin: 5px auto;
+  color: gray;
+  border: 1px solid gray;
+  background-color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: gray;
+  color: white;
+}
+
+.phone-list {
+  flex: 1;
+}
+
+.phone-list h3 {
+ text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; 
+  margin-bottom: 10px;
+}
+
+.boockMark-row{
+}
+
+
+.boockMark-row:hover{
+  font-size: 16px;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+}
+
+.remove-row:hover{
+  font-size: 16px;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+}

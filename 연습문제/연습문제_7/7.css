@@ -1,0 +1,22 @@
+button{
+  margin: 5px;
+}
+
+.container{
+  border: 1px solid black;
+  width: 210px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.number{
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+}

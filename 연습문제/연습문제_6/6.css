@@ -1,0 +1,63 @@
+main{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.names{
+  display: flex;
+  margin: 10px 10px;
+  font-weight: bolder;
+  align-items: center;
+}
+
+.names > span{
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.names > input{
+  width: 700px;
+  height: 40px;
+}
+
+.menus{
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 400px;
+}
+
+.menus > div{
+  margin: 10px;
+}
+
+.menuName{
+  width: 120px;
+  height: 20px;
+}
+
+.menuPrice{
+  width: 70px;
+  height: 20px;
+}
+
+.btns{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 5px;
+}
+
+.btns > button{
+  width: 80px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bolder;
+  margin: 5px;
+}
