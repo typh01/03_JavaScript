@@ -1,63 +1,112 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 main{
-  width: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 30px auto;
+  width: 900px;
+  margin: 50px auto;
 }
 
-.names{
+/* 식당명 */
+.res-name-container{
   display: flex;
-  margin: 10px 10px;
-  font-weight: bolder;
   align-items: center;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
 }
 
-.names > span{
-  font-size: 35px;
+.res-name-container > *{
+  font-size: 32px;
+  margin: 0 5px;
+}
+
+.res-name-hidden{
+  display: none;
+}
+
+#resName{
   cursor: pointer;
+  flex-grow: 1;
 }
 
-.names > input{
-  width: 700px;
-  height: 40px;
+#resNameInput{
+  flex-grow: 1;
 }
 
-.menus{
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+
+/* 메뉴 */
+.menu-container{
+  height: 300px;
+  border-bottom: 3px solid black;
+  list-style: none;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 800px;
-  height: 400px;
+  align-content: flex-start;
+  padding: 10px;
 }
 
-.menus > div{
-  margin: 10px;
-}
-
-.menuName{
-  width: 120px;
-  height: 20px;
-}
-
-.menuPrice{
-  width: 70px;
-  height: 20px;
-}
-
-.btns{
+.menu{
+  width: 33.33%;
+  height: 20%;
   display: flex;
-  flex-direction: row-reverse;
-  margin: 5px;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  font-size: 20px;
 }
 
-.btns > button{
-  width: 80px;
+.menu > input{
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.menu > input[type='text']{
+  flex-grow: 1;
+}
+
+.menu-name-input{
+  width: 65%;
+}
+.menu-price-input{
+  width: 35%;
+}
+
+
+
+
+
+
+/* 버튼 영역 */
+.btn-container{
+  padding-top: 10px;
+  text-align: right;
+}
+
+.btn-container > button{
   background-color: white;
-  border: 1px solid black;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
   border-radius: 5px;
-  font-weight: bolder;
-  margin: 5px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* 버튼 영역 숨기기 */
+.b-hidden{
+  display: none;
+}
+
+/* 버튼 영역 보이기 */
+.b-show{
+  display: block;
 }
