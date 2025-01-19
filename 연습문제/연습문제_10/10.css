@@ -1,0 +1,16 @@
+main{
+  margin: 30px;
+}
+
+.btn-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.btn{
+  margin: 5px;
+}
+
+.img-container{
+  margin: 5px 50px;
+}

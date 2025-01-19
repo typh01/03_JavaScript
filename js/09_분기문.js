@@ -9,8 +9,9 @@ function check1(){
 
     if(num === stopNumber){ // num과 입력 받은 수가 같을 때
        // 반복 멈춤(for문 종료)
+       break;
     }
-    console.log(num);
+    // console.log(num);
   }
 
 }

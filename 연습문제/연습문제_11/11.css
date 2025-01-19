@@ -1,0 +1,20 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.research{
+  width: 600px;
+  height: 35px;
+}
+
+.listbox{
+  height: 100px;
+}
+
+.textbox{
+  width: 600px;
+  border-bottom: 1px solid lightgray;
+}
